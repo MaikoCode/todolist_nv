@@ -1,12 +1,16 @@
 
-
+import { useState } from "react"
+import TodoList from "./Components/TodoList";
 function App() {
  
+    const [todos, setTodos] = useState([]);
 
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+        <h1>TodoList</h1>
+        <TodoList todos={todos} setTodos={setTodos} />
+    </div>
+   
   )
 }
 
