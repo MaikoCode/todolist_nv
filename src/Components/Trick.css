@@ -1,0 +1,41 @@
+
+.trick{
+    background-image: url(../assets/images/bg-desktop-light.jpg);
+    background-size: cover 50px;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+
+
+.dark .trick{
+        background-image: url(../assets/images/bg-desktop-dark.jpg);
+    }
+
+.letter-spacing{
+    letter-spacing: 15px;
+}
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid hsl(234, 11%, 52%);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+   
+  }
+  
+  input[type="checkbox"]:checked {
+    background: url(../assets/images/icon-check.svg), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+  
+  
+

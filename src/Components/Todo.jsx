@@ -1,5 +1,5 @@
 
-
+import './Trick.css'
 function Todo({ todo, toggleTodo }) {
 
   const handleCheckboxChange = () => {
@@ -7,9 +7,10 @@ function Todo({ todo, toggleTodo }) {
   }
 
   return (
-    <li>
-      <input type="checkbox" checked={todo.completed} onChange={handleCheckboxChange} />
-      <span>{todo.text}</span>
+    <li className="flex items-center bg-white dark:bg-darkDesaturedBlue dark:text-white border-b-1 p-4 border-b border-softColor">
+      <input id="task" type="checkbox" checked={todo.completed} onChange={handleCheckboxChange}
+      />
+      <label htmlFor='task' className='pl-4 cursor-pointer text-taskColorWhite dark:text-taskColorBlack '>{todo.text}</label>
     </li>
   );
 }

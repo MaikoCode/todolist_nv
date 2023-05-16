@@ -37,19 +37,19 @@ export default function TodoList({todos, setTodos}) {
 
   return (
     <div>
-        <div>
-            <button onClick={() => setFilter("all")}>All</button>
-            <button onClick={() => setFilter("active")}>Active</button>
-            <button onClick={() => setFilter("finished")}>Finished</button>
-        </div>
-
+        <TodoForm  addTodo={addTodo}/>
         <ul>
         {filteredTodos.map(todo => {
             return <Todo key={todo.id} todo={todo} toggleTodo={toggleTodo} />
         })}
 
         </ul>
-        <TodoForm  addTodo={addTodo}/>
+
+        <div>
+            <button onClick={() => setFilter("all")}>All</button>
+            <button onClick={() => setFilter("active")}>Active</button>
+            <button onClick={() => setFilter("finished")}>Finished</button>
+        </div>
     </div>
   )
 }
