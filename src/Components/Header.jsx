@@ -9,9 +9,9 @@ export default function Header() {
   const { toggleTheme, theme } = useContext(ThemeContext)
 
   return (
-    <header className="px-8 ">
-      <div className='flex justify-between items-center pt-28'>
-        <span className="uppercase font-bold letter-spacing text-4xl dark:text-white">todo</span>
+    <header className="">
+      <div className='flex justify-between items-center pt-20 mb-8'>
+        <span className="uppercase font-bold letter-spacing text-4xl text-white">todo</span>
         <button onClick={toggleTheme}>
             <img src={theme ? IconSun : IconMoon} alt="icon" />
         </button>

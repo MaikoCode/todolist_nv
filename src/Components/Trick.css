@@ -37,5 +37,14 @@
     border: none;
   }
   
-  
-
+  .custom-ring{
+      border: 1px solid hsl(234, 11%, 52%);
+      outline: none;
+      background: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      position: absolute;
+      align-self: center;
+      margin-left: 15px;
+  }

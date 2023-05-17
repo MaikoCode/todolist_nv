@@ -8,10 +8,13 @@ function App() {
     const [todos, setTodos] = useState([]);
 
   return (
-    <div className="w-screen h-screen  bg-white dark:bg-darkBlue trick">
-      <div className="max-w-2xl mx-auto">
+    <div className="w-screen h-screen  bg-dirtyWhite dark:bg-darkBlue trick overflow-auto ">
+      <div className="max-w-2xl mx-auto ">
           <Header />
           <TodoList todos={todos} setTodos={setTodos} />
+      </div>
+      <div className="text-center mt-[150px] text-[#9495A5] dark:text-[#5B5E7E]">
+        <span>Drag and drop to reorder list</span>
       </div>
     </div>
    
