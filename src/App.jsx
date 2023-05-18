@@ -8,7 +8,7 @@ function App() {
     const [todos, setTodos] = useState([]);
 
   return (
-    <div className="w-screen h-screen  bg-dirtyWhite dark:bg-darkBlue trick overflow-auto ">
+    <div className="w-screen h-screen  bg-dirtyWhite dark:bg-darkBlue trick overflow-auto max-sm:p-4 ">
       <div className="max-w-2xl mx-auto ">
           <Header />
           <TodoList todos={todos} setTodos={setTodos} />
